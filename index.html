@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullNameInput">Full Name</label>
+                <input type="text" class="form-control" id="fullNameInput" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="aadharInput">Aadhar Number</label>
+                <input type="number" class="form-control" id="aadharInput" placeholder="Enter your Aadhar number" required>
+            </div>
+            <div class="form-group">
+                <label for="panInput">PAN Card Number</label>
+                <input type="text" class="form-control" id="panInput" placeholder="Enter your PAN card number" required>
+            </div>
+            <div class="form-group">
+                <label for="mobileInput">Mobile Number</label>
+                <input type="text" class="form-control" id="mobileInput" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="form-group">
+                <label for="dobInput">Date of birth</label>
+                <input type="date" class="form-control" id="dobInput" placeholder="Enter your Date of birth" required>
+            </div>
+            <div class="marks">
+                <input type="number" name="subject1Input" id="subject1Input" placeholder="Enter your marks of subject 1">
+                <input type="number" name="subject2Input" id="subject2Input" placeholder="Enter your marks of subject 2">
+                <input type="number" name="subject3Input" id="subject3Input" placeholder="Enter your marks of subject 3">
+                <input type="number" name="subject4Input" id="subject4Input" placeholder="Enter your marks of subject 4">
+                <input type="number" name="subject5Input" id="subject5Input" placeholder="Enter your marks of subject 5">
+                <input type="number" name="subject6Input" id="subject6Input" placeholder="Enter your marks of subject 6">
+                
+                <button type="button" class="ID3" id="calculateButton" onclick="calculateMarks()">Calculate</button>
+            </div>
+            <button type="button" class="ID3" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html>
